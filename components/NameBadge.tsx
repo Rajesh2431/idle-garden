@@ -1,0 +1,2 @@
+import {age} from '@/lib/time';
+export default function NameBadge({name,createdAt,time,visitor,onRename}:{name:string;createdAt:number;time:number;visitor:boolean;onRename:()=>void}){return <div><span className="eyebrow">{visitor?'a borrowed moment of quiet':'a small place to come back to'}</span><h1>{visitor?<span>visiting {name}</span>:<button className="name-button" onClick={onRename} aria-label={`rename ${name}`}>{name}<span aria-hidden="true">↗</span></button>}</h1><p>{age(createdAt,time)}</p></div>}

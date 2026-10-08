@@ -1,0 +1,2 @@
+import type {MetadataRoute} from 'next';
+export default function manifest():MetadataRoute.Manifest{return{name:'idle garden clock',short_name:'idle garden',description:'do nothing. the garden grows.',start_url:'/',scope:'/',display:'standalone',background_color:'#e9eadc',theme_color:'#e9eadc',icons:[{src:'/icon',sizes:'512x512',type:'image/png',purpose:'any'},{src:'/apple-icon',sizes:'180x180',type:'image/png',purpose:'any'}]};}

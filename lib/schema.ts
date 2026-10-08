@@ -1,0 +1,8 @@
+import {z} from 'zod';
+import type {GardenState} from './types';
+export const WeatherSchema=z.enum(['clear','rain','drought','storm','fog','frost','flood']);
+const uint=z.number().int().min(0).max(Number.MAX_SAFE_INTEGER),epoch=z.number().int().min(0).max(8640000000000000);
+export const GiftSchema=z.object({from:z.string().trim().min(1).max(24),msg:z.string().max(80),hue:z.number().min(0).max(360)});
+export const PlantSchema=z.object({id:uint,kind:z.enum(['grass','flower','tree','mushroom','reed']),x:z.number().min(0).max(1),z:z.number().min(0).max(1),age:z.number().min(0).max(10000),hp:z.number().min(0).max(1),hue:z.number().min(0).max(360),seed:uint,gift:GiftSchema.omit({hue:true}).optional()});
+export const LogSchema=z.object({t:epoch,kind:z.enum(['weather','bloom','arrival','ring','loss','birth','note']),text:z.string().max(200)});
+export const GardenStateSchema:z.ZodType<GardenState>=z.object({v:z.literal(1),seed:z.number().int().min(-2147483648).max(4294967295),createdAt:epoch,tick:uint,lastPresent:epoch,water:z.number().min(0).max(100),soil:z.number().min(0).max(100),nextId:uint,peakPlants:uint.max(400),lastWeather:WeatherSchema,milestones:z.array(z.string().max(100)).max(1000),plants:z.array(PlantSchema).max(400),log:z.array(LogSchema).max(200),name:z.string().trim().min(1).max(24),realWeather:z.record(z.string().regex(/^\d{1,12}$/),WeatherSchema).refine(v=>Object.keys(v).length<=400).optional(),lastAlbumSeason:z.string().regex(/^\d{4}-(spring|summer|autumn|winter)$/).optional()}).superRefine((s,ctx)=>{if(new Set(s.plants.map(p=>p.id)).size!==s.plants.length||s.plants.some(p=>p.id>=s.nextId))ctx.addIssue({code:'custom',message:'invalid plant identifiers'});});

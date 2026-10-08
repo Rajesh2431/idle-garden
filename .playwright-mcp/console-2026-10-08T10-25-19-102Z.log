@@ -1,0 +1,152 @@
+[      63ms] [ERROR] ./components/GardenCanvas.tsx:32:1907
+Error: Expected '</', got '{'
+  30 | ...
+  31 | ...
+> 32 | ...etNotice("the album is being prepared.")}/>{debug&&view&&<DebugPanel state={view} time=...
+     |                                               ^
+  33 | ...
+  34 | ...
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./components/GardenCanvas.tsx
+    ./app/page.tsx @ http://localhost:3000/_next/static/chunks/1ppo_next_dist_1nb-_zl._.js:1052
+[     249ms] [ERROR] ./components/GardenCanvas.tsx:32:1907
+Error: Expected '</', got '{'
+  30 | ...
+  31 | ...
+> 32 | ...etNotice("the album is being prepared.")}/>{debug&&view&&<DebugPanel state={view} time=...
+     |                                               ^
+  33 | ...
+  34 | ...
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./components/GardenCanvas.tsx
+    ./app/page.tsx @ http://localhost:3000/_next/static/chunks/1ppo_next_dist_1nb-_zl._.js:1052
+[     537ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/1ppo_next_dist_1nb-_zl._.js:776
+[     728ms] [ERROR] ./components/GardenCanvas.tsx:32:1907
+Error: Expected '</', got '{'
+  30 | ...
+  31 | ...
+> 32 | ...etNotice("the album is being prepared.")}/>{debug&&view&&<DebugPanel state={view} time=...
+     |                                               ^
+  33 | ...
+  34 | ...
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./components/GardenCanvas.tsx
+    ./app/page.tsx @ http://localhost:3000/_next/static/chunks/1ppo_next_dist_1nb-_zl._.js:1052
+[     818ms] [ERROR] ./components/GardenCanvas.tsx:32:1907
+Error: Expected '</', got '{'
+  30 | ...
+  31 | ...
+> 32 | ...etNotice("the album is being prepared.")}/>{debug&&view&&<DebugPanel state={view} time=...
+     |                                               ^
+  33 | ...
+  34 | ...
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./components/GardenCanvas.tsx
+    ./app/page.tsx @ http://localhost:3000/_next/static/chunks/1ppo_next_dist_1nb-_zl._.js:1052
+[    1102ms] [ERROR] ./components/GardenCanvas.tsx:32:1907
+Error: Expected '</', got '{'
+  30 | ...
+  31 | ...
+> 32 | ...etNotice("the album is being prepared.")}/>{debug&&view&&<DebugPanel state={view} time=...
+     |                                               ^
+  33 | ...
+  34 | ...
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./components/GardenCanvas.tsx
+    ./app/page.tsx @ http://localhost:3000/_next/static/chunks/1ppo_next_dist_1nb-_zl._.js:1052
+[    1102ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/1ppo_next_dist_1nb-_zl._.js:776
+[    1210ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://localhost:3000/?debug=1&warp=+8h:0
+[    1335ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/18g4_react-dom_089_yzl._.js:15093
+[    1399ms] Error: ./components/GardenCanvas.tsx:32:1907
+Error: Expected '</', got '{'
+  30 | ...
+  31 | ...
+> 32 | ...etNotice("the album is being prepared.")}/>{debug&&view&&<DebugPanel state={view} time=...
+     |                                               ^
+  33 | ...
+  34 | ...
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./components/GardenCanvas.tsx
+    ./app/page.tsx
+
+
+    at <unknown> (Error: ./components/GardenCanvas.tsx:32:1907)
+    at Object.getCompilationErrors (file:///home/dog/Projects/learning/web/clock/node_modules/.offline/next@16.3.4/node_modules/next/dist/server/dev/hot-reloader-turbopack.js:1417:59)
+    at DevBundlerService.getCompilationError (file:///home/dog/Projects/learning/web/clock/node_modules/.offline/next@16.3.4/node_modules/next/dist/server/lib/dev-bundler-service.js:59:55)
+    at DevServer.getCompilationError (file:///home/dog/Projects/learning/web/clock/node_modules/.offline/next@16.3.4/node_modules/next/dist/server/dev/next-dev-server.js:754:42)
+    at DevServer.findPageComponents (file:///home/dog/Projects/learning/web/clock/node_modules/.offline/next@16.3.4/node_modules/next/dist/server/dev/next-dev-server.js:724:43)
+    at async DevServer.renderErrorToResponseImpl (file:///home/dog/Projects/learning/web/clock/node_modules/.offline/next@16.3.4/node_modules/next/dist/server/base-server.js:1828:26)
+[    1686ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/1ppo_next_dist_1-ya09k._.js:756
+[    1697ms] [ERROR] ./components/GardenCanvas.tsx:32:1907
+Error: Expected '</', got '{'
+  30 | ...
+  31 | ...
+> 32 | ...etNotice("the album is being prepared.")}/>{debug&&view&&<DebugPanel state={view} time=...
+     |                                               ^
+  33 | ...
+  34 | ...
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./components/GardenCanvas.tsx
+    ./app/page.tsx @ http://localhost:3000/_next/static/chunks/1ppo_next_dist_1-ya09k._.js:1817
+[    1767ms] [ERROR] ./components/GardenCanvas.tsx:32:1907
+Error: Expected '</', got '{'
+  30 | ...
+  31 | ...
+> 32 | ...etNotice("the album is being prepared.")}/>{debug&&view&&<DebugPanel state={view} time=...
+     |                                               ^
+  33 | ...
+  34 | ...
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./components/GardenCanvas.tsx
+    ./app/page.tsx @ http://localhost:3000/_next/static/chunks/1ppo_next_dist_1-ya09k._.js:1817
+[    8150ms] [ERROR] ./components/GardenCanvas.tsx:32:1907
+Error: Expected '</', got '{'
+  30 | ...
+  31 | ...
+> 32 | ...etNotice("the album is being prepared.")}/>{debug&&view&&<DebugPanel state={view} time=...
+     |                                               ^
+  33 | ...
+  34 | ...
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./components/GardenCanvas.tsx
+    ./app/page.tsx @ http://localhost:3000/_next/static/chunks/1ppo_next_dist_1-ya09k._.js:1817
+[    8354ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/1ppo_next_dist_1-ya09k._.js:756
+[    8373ms] [LOG] [Fast Refresh] done in 120ms @ http://localhost:3000/_next/static/chunks/1ppo_next_dist_1-ya09k._.js:756
+[    8488ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/1ppo_next_dist_1nb-_zl._.js:776
+[    8795ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/1ppo_next_dist_1nb-_zl._.js:776

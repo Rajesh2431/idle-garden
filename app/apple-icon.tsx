@@ -1,0 +1,3 @@
+import {ImageResponse} from 'next/og';
+export const size={width:180,height:180};export const contentType='image/png';
+export default function Icon(){return new ImageResponse(<div style={{width:'100%',height:'100%',background:'#e9eadc',display:'flex',alignItems:'center',justifyContent:'center'}}><div style={{position:'absolute',bottom:32,left:25,width:130,height:45,borderRadius:'50%',background:'#8fa477'}}/><div style={{position:'absolute',top:60,left:88,width:5,height:70,background:'#456a4c'}}/><div style={{position:'absolute',top:45,left:89,width:47,height:35,borderRadius:'95% 8% 95% 8%',background:'#638c5f'}}/><div style={{position:'absolute',top:70,left:46,width:46,height:30,borderRadius:'8% 95% 8% 95%',background:'#7d9c65'}}/></div>,size);}

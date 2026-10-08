@@ -1,0 +1,24 @@
+- main [ref=f4e2]:
+  - img "a garden is waking" [ref=f4e3]
+  - generic:
+    - generic [ref=f4e4]:
+      - text: a small place to come back to
+      - heading "idle garden" [level=1] [ref=f4e5]
+      - paragraph [ref=f4e6]: planting a beginning
+    - generic [ref=f4e7]:
+      - generic [aria-hidden] [ref=f4e8]: ☼
+      - generic [ref=f4e9]:
+        - text: autumn
+        - generic [ref=f4e10]: a little quiet
+  - generic:
+    - paragraph: let the world wait a little
+    - generic: —:—
+    - paragraph
+    - paragraph:
+      - text: do nothing.
+      - emphasis: something is growing.
+  - generic [ref=f4e11]:
+    - generic [ref=f4e12]:
+      - text: the garden is holding its breath.
+      - generic [ref=f4e14]: idle garden clock
+    - generic [ref=f4e15]: 6 small beginnings

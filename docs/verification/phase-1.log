@@ -1,0 +1,55 @@
+
+> idle-garden-clock@1.0.0 check /home/dog/Projects/learning/web/clock
+> pnpm lint && pnpm typecheck && pnpm test && pnpm build
+
+
+> idle-garden-clock@1.0.0 lint /home/dog/Projects/learning/web/clock
+> eslint .
+
+
+> idle-garden-clock@1.0.0 typecheck /home/dog/Projects/learning/web/clock
+> tsc --noEmit
+
+
+> idle-garden-clock@1.0.0 test /home/dog/Projects/learning/web/clock
+> vitest run
+
+(!) Your Vite config uses features that are unsupported by `configLoader: 'native'`, which is planned to become the default in a future major version of Vite:
+  - ESM syntax in a file loaded as CommonJS (vitest.config.ts:1:1). Use a `.mjs` extension or set `"type": "module"` in the closest package.json
+Set `VITE_CONFIG_NATIVE_IGNORE_WARNING=true` to suppress this warning.
+
+ RUN  v4.1.10 /home/dog/Projects/learning/web/clock
+
+
+ Test Files  4 passed (4)
+      Tests  14 passed (14)
+   Start at  15:44:06
+   Duration  1.13s (transform 425ms, setup 0ms, import 714ms, tests 766ms, environment 1ms)
+
+
+> idle-garden-clock@1.0.0 build /home/dog/Projects/learning/web/clock
+> next build --webpack
+
+▲ Next.js 16.3.4 (webpack)
+✓ Running next.config.ts took 45ms
+- Experiments (use with caution):
+  · cpus: 2
+  ⨯ useTypeScriptCli
+
+  Creating an optimized production build ...
+✓ Compiled successfully in 2.4s
+  Running TypeScript ...
+  Finished TypeScript in 4.5s ...
+  Collecting page data using 2 workers ...
+  Generating static pages using 2 workers (0/3) ...
+✓ Generating static pages using 2 workers (3/3) in 274ms
+  Finalizing page optimization ...
+  Collecting build traces ...
+
+Route (app)
+┌ ○ /
+└ ○ /_not-found
+
+
+○  (Static)  prerendered as static content
+

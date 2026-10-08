@@ -1,0 +1,4 @@
+import {MAX_CATCHUP_TICKS,stepTick,TICK_MS} from './sim';
+import type {GardenState,LogEntry,Report} from './types';
+function yieldTurn():Promise<void>{return new Promise(resolve=>{if(typeof globalThis.requestIdleCallback==='function')globalThis.requestIdleCallback(()=>resolve(),{timeout:50});else setTimeout(resolve,0);});}
+export async function catchUpAsync(s:GardenState,nowMs:number,onProgress:(n:number)=>void):Promise<Report>{const target=Math.floor(nowMs/TICK_MS),from=Math.max(s.tick+1,target-MAX_CATCHUP_TICKS+1),total=Math.max(0,target-from+1);const before=structuredClone(s.plants),newLog:LogEntry[]=[];let ticks=0;onProgress(0);while(ticks<total){await yieldTurn();const end=Math.min(ticks+500,total);while(ticks<end){newLog.push(...stepTick(s,from+ticks));ticks++;}onProgress(ticks/total);}s.tick=Math.max(s.tick,target);onProgress(1);return{ticks,awayMs:Math.max(0,nowMs-s.lastPresent),newLog,before,after:structuredClone(s.plants)};}
